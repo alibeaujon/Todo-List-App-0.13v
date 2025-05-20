@@ -1,4 +1,4 @@
-# 📝 Todo List App - Python Project (Day 1 of 20)
+# 📝 Todo List App - Python Project
 
 This is a simple command-line Todo List application written in Python. It's one of the first real-world projects from the **60-Day Python Mega Course**, designed to build practical skills through hands-on development.
 
