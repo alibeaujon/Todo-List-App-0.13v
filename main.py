@@ -1,20 +1,22 @@
 def read_file():
     # Read the file and return the list of tasks
-    with open('todos.txt', 'r') as file:
-        todos = file.readlines()
-    return todos
-def write_file(todos):
+    with open('todos.txt', 'r') as file_local:
+        todos_local = file_local.readlines()
+    return todos_local
+def write_file(todos_local):
     # Write the list of tasks to the file
-    with open('todos.txt', 'w') as file:
-        file.writelines(todos)
+    with open('todos.txt', 'w') as file_local:
+        file_local.writelines(todos_local)
 def show_list():
     # Read and display the list of tasks
-    todos = read_file()
-    for index, item in enumerate(todos):
+    todos_local = read_file()
+    for index, item in enumerate(todos_local):
         row = f"{index + 1}-{item}"
         row = row.strip()
         print(row)
-    print(f"--({len(todos)})todos in the list")
+    print(f"--({len(todos_local)})todos in the list")
+
+
 
 while True:
     # Prompt user for action
@@ -25,7 +27,9 @@ while True:
         # Add a new task
         todo = user_action[4:]
         todos = read_file()
+
         todos.append(todo + '\n')
+
         write_file(todos)
 
     elif user_action.startswith("show"):
