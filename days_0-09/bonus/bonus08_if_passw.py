@@ -26,7 +26,7 @@ print(result)
 if all(result.values()): # Chequea el valor del diccionario
     print('Strong Password')
 else:
-    print('Weak Password')"""
+    print('Weak Password')
 
 print("----------Bug-Fixing Exercises---------")
 
