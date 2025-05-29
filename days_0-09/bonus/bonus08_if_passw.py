@@ -1,4 +1,4 @@
-"""print("-------Bonus:Strong Password---------")
+""print("-------Bonus:Strong Password---------")
 
 password = input("Enter new Password (8 to 16 characters): ")
 result = {}
