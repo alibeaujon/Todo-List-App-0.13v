@@ -23,3 +23,23 @@ else:
     print("Kid can us it.")
 
 print("----------------------------")
+
+def get_nr_items(user_input):
+    items = user_input.split(",")
+    items = len(items)
+    return items
+
+user_input = "Hola, como, estas, ?"
+print(get_nr_items(user_input))
+
+print("----------------------------")
+
+
+def calculate_time(h, g=9.80665):
+    t = (2 * h / g) ** 0.5
+    return t
+
+
+time = calculate_time(100)
+print(time)
+
